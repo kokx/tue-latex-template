@@ -1,0 +1,53 @@
+\documentclass[a4paper,10pt,twoside]{report}
+
+\usepackage{TUestyle}
+
+\addto\captionsbritish{\renewcommand{\contentsname}{Table of Contents}}
+
+%\linenumbers
+
+\newcommand{\researchgroup}{}
+
+\newcommand{\shortdoctitle}{TU/e thesis style}
+\newcommand{\doctitle}{TU/e thesis \LaTeX-style}
+\newcommand{\docsubtitle}{}
+
+\newcommand{\author}{Kokx, P.A.}
+\newcommand{\keywords}{keywords, for, in, document}
+\newcommand{\version}{v0.1}
+
+\newcommand{\firstsupervisor}{Supervisor from TU/e}
+\newcommand{\firstsupervisoraffliation}{TU/e}
+\newcommand{\secondsupervisor}{Supervisor from Company / Second supervisor TU/e}
+\newcommand{\secondsupervisoraffliation}{Company}
+
+\author{\authorone}
+\title{\doctitle}
+
+\hypersetup{
+    pdfauthor   = {\author},
+    pdftitle    = {\shortdoctitle},
+    pdfsubject  = {\doctitle},
+    pdfkeywords = {\keywords}
+}
+
+\begin{document}
+
+\input{Titlepage}
+
+\normalsize
+
+\chapter*{Abstract}\label{chapter:Abstract}
+\input{chapters/00-abstract.tex}
+
+\tableofcontents
+
+\chapter{Chapter One}\label{chapter:Chapter One}
+\chapter{Chapter Two}\label{chapter:Chapter Two}
+
+\appendix
+\chapter{Appendix One}\label{chapter:Appendix One}
+\chapter{Appendix Two}\label{chapter:Appendix Two}
+
+\printbibliography{}
+\end{document}
